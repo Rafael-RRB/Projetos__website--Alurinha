@@ -1,0 +1,463 @@
+body {
+	background-color: #F2F5F7;
+	font-family: 'Open Sans',Arial,sans-serif;
+}
+
+.container {
+	width: 85%;
+	margin: 0 auto;
+}
+
+.cabecalhoPrincipal {
+	background-color: #FFF;
+	padding: 20px 0;
+}
+.cabecalhoPrincipal__conteudo {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.cabecalhoPrincipal-titulo {
+	font-weight: bold;
+	font-size: 2em;
+	margin-bottom: 20px;
+}
+.cabecalhoPrincipal-titulo {
+	display: inline-block;
+  vertical-align: middle;
+}
+
+.cabecalhoPrincipal-titulo a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.cabecalhoPrincipal-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.cabecalhoPrincipal-nav-link {
+	padding: 0.5rem;
+  margin: auto auto 10px auto;
+	color: #000;
+	background-color: #FFF;
+	text-decoration: none;
+	transition: .5s;
+	display: inline-block;
+	border-bottom: 1px solid #9799A6;
+}
+
+.conteudoPrincipal {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.subtitulo {
+	font-weight: bold;
+	font-size: 32px;
+	margin-bottom: 10px;
+	text-align: left;
+}
+.conteudoPrincipal-cursos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.conteudoPrincipal-cursos-link {
+  display: flex;
+  flex-wrap: wrap;
+  width: 26%;
+	height: 7rem;
+	background-color: #FFF;
+	text-align: center;
+	margin: 1rem 0;
+	transition: .3s;
+	box-shadow: 2px 2px 2px #CCC;
+	position: relative;
+}
+
+.conteudoPrincipal-cursos-link a {
+  margin: 2%;
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.conteudoPrincipal-cursos-link:hover {
+	box-shadow: 4px 4px 4px #CCC;
+}
+
+.conteudoPrincipal-cursos-link a:before {
+	content: '';
+	display: block;
+	width: 50px;
+	height: 50px;
+	margin: 10px auto;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(even) a:before {
+	background: url(../img/background1.svg) no-repeat;	
+}
+
+.conteudoPrincipal-cursos-link:nth-child(odd) a:before {
+	background: url(../img/background2.svg) no-repeat;
+}
+
+
+.rodapePrincipal {
+	background-color: #17212A;
+	padding-top: 20px;
+}
+
+.rodapePrincipal .subtitulo {
+	color: #FFF;
+}
+.rodapePrincipal-cursos-div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.rodapePrincipal-navMap-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.rodapePrincipal-navMap-link {
+	text-decoration: none;
+	color: #FFF;
+	margin-top: 10px;
+}
+
+.rodapePrincipal-navMap-link {
+	font-size: .9em;
+}
+
+.navmap-list-title {
+	font-weight: 700;
+	font-size: 1.3em;
+	margin: .9em 0;
+	padding-left: .3em;
+	padding-top: .2em;
+	padding-bottom: .2em;
+}
+
+.navmap-list-title + .rodapePrincipal-navMap-link {
+	margin-top: 0;
+}
+
+.navmap-list-title-bancoDeDados { color: #ff9b9b; border-left: 4px solid #ff9b9b; }
+.navmap-list-title-framework { color: #e29cff; border-left: 4px solid #e29cff; }
+.navmap-list-title-frontend { color: #78d6ff; border-left: 4px solid #78d6ff; }
+.navmap-list-title-backend { color: #52ffb2; border-left: 4px solid #52ffb2; }
+
+.rodapePrincipal-patrocinadores {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+	margin-top: 30px;
+	background: #F2F5F7;
+	padding: 20px 0;
+}
+.rodapePrincipal-patrocinadores .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.rodapePrincipal-contatoForm {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.rodapePrincipal-contatoForm label[for=email-contato] {
+	font-weight: bold;
+	font-size: 14px;
+	color: #000;
+	margin-bottom: 5px;
+	display: block;
+}
+.rodapePrincipal-contatoForm-fieldset {
+  display: flex;
+}
+.rodapePrincipal-contatoForm-emailInput {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	padding: 10px;
+}
+
+.rodapePrincipal-contatoForm-submit {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-color: #05642C;
+	color: #FFF;
+	cursor: pointer;
+	
+}
+
+.rodapePrincipal-contatoForm-submit,
+.rodapePrincipal-contatoForm-emailInput {
+	outline: 0;
+	border: 1px solid #05642C;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+.videoSobre {
+	background-color: #305272;
+	padding: 25px 0;
+  flex-grow: 1;
+  flex-shrink: 2;
+}
+.videoSobre__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.videoSobre-video {
+  flex-grow: 1;
+  flex-shrink: 2;
+  max-width: 100%;
+  padding-top: 56.25%;
+}
+
+.videoSobre .container {
+	color: #FFF;
+}
+
+.videoSobre-sobre-title {
+	font-size: 1.2em;
+	font-weight: bolder;
+}
+
+.videoSobre-sobre {
+  text-align: center;
+  width: 40%;
+	font-size: 1.3em;
+	line-height: 2;
+}
+
+.videoSobre-button {
+	border-radius: 8px;
+	background-color: #9F2B19;
+	display: block;
+	color: #FFF;
+	border: none;
+  width: 100%;
+	height: 50px;
+	font-size: 1rem;
+	outline: none;
+}
+
+.rodapePrincipal-contatoForm-legend {
+  text-align: left;
+	margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+
+	.container {
+    width: 95%;
+	}
+
+	.subtitulo {
+		text-align: center;
+	}
+  .cabecalhoPrincipal__conteudo {
+    display: flex;
+    align-items: initial;
+  }
+  .cabecalhoPrincipal-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: initial;
+  }
+  .cabecalhoPrincipal-nav-link {
+    text-align: center;
+    padding: 0.5rem;
+    margin: auto;
+  }
+  .cabecalhoPrincipal__conteudo {
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+	.cabecalhoPrincipal-nav-link {
+  }
+ 
+	.cabecalhoPrincipal-nav-link:hover {
+		color: #FFF;
+		background-color: #000;
+	}
+
+	.cabecalhoPrincipal-titulo {
+		margin-bottom: 1rem;
+	}
+
+	.cabecalhoPrincipal-nav {
+		width: auto;
+	}
+
+	.cabecalhoPrincipal-nav-link {
+		width: auto;
+		margin: 0 0 .5rem 0;
+	}
+
+  .conteudoPrincipal-cursos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  .conteudoPrincipal-cursos-link {
+    width: 100%;
+    margin: .5rem 0;
+  }
+
+  .conteudoPrincipal-cursos-link a {
+  }
+  
+  .videoSobre {
+  }
+  .videoSobre__flex {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .videoSobre-video {
+    flex-grow: 1;
+    flex-shrink: 2;
+    max-width: 100%;
+    padding: 0rem 0rem 2rem 0rem;
+  }
+
+  .videoSobre-sobre-title {
+    font-size: 1.1em;
+  }
+  
+  .videoSobre-sobre {
+    width: 100%;
+    font-size: 1em;
+  }
+
+  .videoSobre-button {
+    margin-top: 2rem;
+  }
+  
+  
+  .rodapePrincipal-cursos-div {
+  }
+  .rodapePrincipal-navMap-list {
+    flex-direction: column;
+  }
+  
+  
+  .rodapePrincipal-patrocinadores-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: initial;
+    text-align: center;
+  }
+  .rodapePrincipal-patrocinadores-mobile img {
+    width: 5rem;
+  }
+  
+  .rodapePrincipal-patrocinadores-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+  }
+	.rodapePrincipal-contatoForm {
+		display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+		text-align: center;
+	}
+  .rodapePrincipal-contatoForm-legend {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .rodapePrincipal-contatoForm-fieldset {
+    display: flex;
+  }
+  .rodapePrincipal-contatoForm-emailInput {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 10px;
+  }
+
+  .rodapePrincipal-contatoForm-submit {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #05642C;
+    color: #FFF;
+    cursor: pointer;
+    
+  }
+
+  .rodapePrincipal-contatoForm-submit,
+  .rodapePrincipal-contatoForm-emailInput {
+    outline: 0;
+    border: 1px solid #05642C;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+}
+/*
+@media(min-width: 1000px) {
+	.conteudoPrincipal-cursos-link {
+		margin: 1.333%;
+	}
+
+	.conteudoPrincipal-cursos-link:nth-child(3n) {
+		margin-right: 1.33%;
+	}
+
+	.conteudoPrincipal-cursos-link:nth-child(3n+1) {
+		margin-left: 1.333%;
+	}
+
+	.conteudoPrincipal-cursos-link:nth-child(4n) {
+		margin-right: 0;
+	}
+
+	.conteudoPrincipal-cursos-link:nth-child(4n+1) {
+		margin-left: 0;
+	}
+
+	.videoSobre-sobre {
+		margin-left: 1.5em;
+	}
+
+}
+*/
+
